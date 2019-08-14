@@ -12,6 +12,11 @@ def name = "YueDu"
 def version = "2." + releaseTime()
 def gitCommits = Integer.parseInt('git rev-list --count HEAD'.execute([], project.rootDir).text.trim())
 
+def RELEASE_STORE_FILE = "e:\\adminfiles\\signkey\\rockrule.jks"
+def RELEASE_KEY_PASSWORD = "6789@jkl"
+def RELEASE_KEY_ALIAS = "felix"
+def RELEASE_STORE_PASSWORD = "6789@jkl"
+
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
